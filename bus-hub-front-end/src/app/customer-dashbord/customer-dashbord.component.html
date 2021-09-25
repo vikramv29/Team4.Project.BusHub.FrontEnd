@@ -1,0 +1,37 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+      <!--  <span>HOME</span> -->
+       
+       <span class="spacer"></span>
+       <a mat-button routerLink="/login/customerdashbord/searchbyid">Search by id</a>
+       <a mat-button routerLink="/login/customerdashbord/searchbyname">Search by name</a>
+       <a mat-button routerLink="/login/customerdashbord/searchbysource">search by source</a>
+       <a mat-button routerLink="/login/customerdashbord/searchbytype">search by type</a>
+
+       <span><a href="/">Log out</a></span>
+    </mat-toolbar-row>
+  </mat-toolbar>
+  <mat-card class="my-card">
+     <mat-card-content>
+        <form class="my-form">
+           <mat-form-field class="full-width">
+              <mat-label>Source</mat-label>
+              <input  matInput  placeholder="source" name="Customer.customerEmailId">
+           </mat-form-field>
+           <mat-form-field class="full-width">
+              <mat-label>Destination</mat-label>
+              <input  matInput  placeholder="Destination" name="Customer.customerPassword" >
+           </mat-form-field>
+           <mat-form-field>
+            <mat-label>Date of Birth</mat-label>
+        <input matInput [matDatepicker]="picker" placeholder="Choose a date">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+        </form>
+     </mat-card-content>
+     <mat-card-actions>
+        <button mat-raised-button (click)="login()" color="primary">Search</button>
+     </mat-card-actions>
+  </mat-card>   
+  <router-outlet></router-outlet>
