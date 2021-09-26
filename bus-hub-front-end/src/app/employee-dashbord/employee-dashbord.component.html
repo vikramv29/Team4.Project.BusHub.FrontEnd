@@ -3,20 +3,25 @@
       <button mat-icon-button>
         <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
       </button>
-      <h1>SimpleCRM</h1>
+      <h1>Manage Details</h1>
       
     </mat-toolbar-row>
   
     
   </mat-toolbar>
   <mat-sidenav-container>
-    <mat-sidenav #sidenav class="example-sidenav" mode="side" opened="true" (mouseenter)="mouseenter()" (mouseleave)="mouseleave()">
+    <mat-sidenav #sidenav class="example-sidenav" >
       <mat-nav-list>
   
-        <a mat-button routerLink="/register">Register</a>
-     <a mat-button routerLink="/login">Customer Login</a>
-        
-  
+        <a mat-button routerLink="/employeeLogin/employeedashbord/addbus">Add Bus</a>
+        <a mat-button routerLink="/employeeLogin/employeedashbord/deletebus">Delete Bus</a>
+        <a mat-button routerLink="/employeeLogin/employeedashbord/getbusbyid">Display Bus By Bus Id</a>
+        <a mat-button routerLink="/employeeLogin/employeedashbord/getbusbyname">Display Bus by Bus Name</a>
+        <a mat-button routerLink="/employeeLogin/employeedashbord/updatebus">Update Bus</a>
+        <a mat-button routerLink="/employeeLogin/employeedashbord/viewallbuses">Display All Buses</a>
+        <a mat-button routerLink="/employeeLogin/employeedashbord/getbusbysource">Display Bus by Bus Source</a>
+        <a mat-button routerLink="/employeeLogin/employeedashbord/getbusbytype">Display Bus by Bus Type</a>
+
       </mat-nav-list>
     </mat-sidenav>
     <mat-sidenav-content>
