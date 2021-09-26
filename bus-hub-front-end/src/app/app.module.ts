@@ -21,6 +21,19 @@ import { SearchByNameComponent } from './search-by-name/search-by-name.component
 import { SearchByIdComponent } from './search-by-id/search-by-id.component';
 import { SearchBySourceComponent } from './search-by-source/search-by-source.component';
 import { SearchByBusTypeComponent } from './search-by-bus-type/search-by-bus-type.component';
+import { AddbusComponent } from './addbus/addbus.component';
+import { UpdatebusComponent } from './updatebus/updatebus.component';
+import { GetBusByIdComponent } from './get-bus-by-id/get-bus-by-id.component';
+import { DeleteBusComponent } from './delete-bus/delete-bus.component';
+import { ViewAllBusComponent } from './view-all-bus/view-all-bus.component';
+import { GetBusByNameComponent } from './get-bus-by-name/get-bus-by-name.component';
+import { GetBusBySourceComponent } from './get-bus-by-source/get-bus-by-source.component';
+import { GetBusBytypeComponent } from './get-bus-bytype/get-bus-bytype.component';
+import { GetAllCustomerComponent } from './get-all-customer/get-all-customer.component';
+import { GetCustomerbynameComponent } from './get-customerbyname/get-customerbyname.component';
+import { GetCustomeridComponent } from './get-customerid/get-customerid.component';
+import { ViewAllticketsComponent } from './view-alltickets/view-alltickets.component';
+import { ViewticketByIdComponent } from './viewticket-by-id/viewticket-by-id.component';
 
 
 
@@ -38,7 +51,20 @@ import { SearchByBusTypeComponent } from './search-by-bus-type/search-by-bus-typ
     SearchByNameComponent,
     SearchByIdComponent,
     SearchBySourceComponent,
-    SearchByBusTypeComponent
+    SearchByBusTypeComponent,
+    AddbusComponent,
+    UpdatebusComponent,
+    GetBusByIdComponent,
+    DeleteBusComponent,
+    ViewAllBusComponent,
+    GetBusByNameComponent,
+    GetBusBySourceComponent,
+    GetBusBytypeComponent,
+    GetAllCustomerComponent,
+    GetCustomerbynameComponent,
+    GetCustomeridComponent,
+    ViewAllticketsComponent,
+    ViewticketByIdComponent
     
   ],
   imports: [
