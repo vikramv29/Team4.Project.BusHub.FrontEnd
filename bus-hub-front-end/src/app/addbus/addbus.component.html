@@ -1,1 +1,48 @@
-<p>addbus works!</p>
+<mat-toolbar>
+    <span>ADD BUS</span>
+  </mat-toolbar>
+  <mat-card class="my-card">
+     <mat-card-content>
+        <form class="my-form">
+           <mat-form-field class="full-width">
+              <mat-label>Bus Name</mat-label>
+              <input  matInput  placeholder="Bus Name" name="Bus.busName" type="text">
+           </mat-form-field>
+           <mat-form-field class="full-width">
+              <mat-label>Bus Source</mat-label>
+              <input  matInput  placeholder="Bus Source" name="Bus.busSource" type="text">
+           </mat-form-field>
+           <mat-form-field class="full-width">
+            <mat-label>Bus Destination</mat-label>
+            <input  matInput  placeholder="Bus Destination" name="Bus.busDestination" type="text">
+         </mat-form-field>
+         <mat-form-field class="full-width">
+            <mat-label>Bus OnBoard Date</mat-label>
+            <input  matInput  placeholder="Bus OnBoard Date" name="Bus.busOnBoardDate" type="text">
+         </mat-form-field>
+         <mat-form-field class="full-width">
+            <mat-label>Bus Arrival Date</mat-label>
+            <input  matInput  placeholder="Bus Arrival Date" name="Bus.busArrivalDate" type="text">
+         </mat-form-field>
+         <mat-form-field class="full-width">
+            <mat-label>Bus Price</mat-label>
+            <input  matInput  placeholder="Bus Price" name="Bus.busPrice" type="number">
+         </mat-form-field>
+         <mat-form-field class="full-width">
+            <mat-label>Bus Type</mat-label>
+            <input  matInput  placeholder="Bus Type" name="Bus.busType" type="text">
+         </mat-form-field>
+         <mat-form-field class="full-width">
+            <mat-label>Bus Status</mat-label>
+            <input  matInput  placeholder="Bus Status" name="Bus.busStatus" type="text">
+         </mat-form-field>
+         <mat-form-field class="full-width">
+            <mat-label>Bus Rating</mat-label>
+            <input  matInput  placeholder="Bus Rating" name="Bus.busRating" type="number">
+         </mat-form-field>
+        </form>
+     </mat-card-content>
+     <mat-card-actions>
+        <button mat-raised-button (click)="addBus()" color="primary">ADD BUS</button>
+     </mat-card-actions>
+  </mat-card> 
