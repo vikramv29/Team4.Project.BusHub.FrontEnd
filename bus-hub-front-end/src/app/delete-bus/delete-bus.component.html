@@ -1,1 +1,16 @@
-<p>delete-bus works!</p>
+<mat-toolbar>
+    <span>DELETE BUS</span>
+  </mat-toolbar>
+  <mat-card class="my-card">
+     <mat-card-content>
+        <form class="my-form">
+           <mat-form-field class="full-width">
+              <mat-label>Enter ID to be deleted</mat-label>
+              <input  matInput  placeholder="Bus ID" name="Bus.busId" type="number">
+           </mat-form-field>
+        </form>
+    </mat-card-content>
+    <mat-card-actions>
+       <button mat-raised-button (click)="deleteBusById()" color="primary">DELETE BUS</button>
+    </mat-card-actions>
+ </mat-card> 
