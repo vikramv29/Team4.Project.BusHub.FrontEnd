@@ -30,7 +30,7 @@ export class CustomerService {
   public getCustomersBycustomerName(customerName:string): Observable<Customer[]>{
     return this.http.get<Customer[]>(this.url+ "s") ;
   }
-  public getCustomersByemailId(emailId:string): Observable<Customer[]>{
+  public getCustomersBycustomerEmailId(customerEmailId:string): Observable<Customer[]>{
     return this.http.get<Customer[]>(this.url+ "s") ;
   }
 }
