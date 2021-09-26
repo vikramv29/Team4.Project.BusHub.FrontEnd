@@ -18,8 +18,10 @@ import { SearchByBusTypeComponent } from './search-by-bus-type/search-by-bus-typ
 import { SearchByIdComponent } from './search-by-id/search-by-id.component';
 import { SearchByNameComponent } from './search-by-name/search-by-name.component';
 import { SearchBySourceComponent } from './search-by-source/search-by-source.component';
+import { UpdateCustomerComponent } from './update-customer/update-customer.component';
 import { UpdatebusComponent } from './updatebus/updatebus.component';
 import { ViewAllBusComponent } from './view-all-bus/view-all-bus.component';
+import { ViewAllCustomersComponent } from './view-all-customers/view-all-customers.component';
 import { ViewAllticketsComponent } from './view-alltickets/view-alltickets.component';
 import { ViewticketByIdComponent } from './viewticket-by-id/viewticket-by-id.component';
 
@@ -45,7 +47,9 @@ const routes: Routes = [
   // {path: 'employeeLogin/employeedashbord/getcustomerbyname', component: GetCustomerbynameComponent},
   // {path: 'employeeLogin/employeedashbord/getcustomerbyid', component: GetCustomeridComponent},
   {path: 'employeeLogin/employeedashbord/updatebus', component: UpdatebusComponent},
+  {path: 'login/customerdahbord/updatecustomer', component: UpdateCustomerComponent},
   {path: 'employeeLogin/employeedashbord/viewallbuses', component: ViewAllBusComponent},
+  {path: 'employeeLogin/employeedashbord/viewallcustomers', component: ViewAllCustomersComponent},
   {path: 'employeeLogin/employeedashbord/viewalltickets', component: ViewAllticketsComponent},
   {path: 'employeeLogin/employeedashbord/viewticketbyid', component: ViewticketByIdComponent}
 

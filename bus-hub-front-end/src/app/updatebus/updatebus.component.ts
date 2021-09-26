@@ -21,7 +21,7 @@ export class UpdatebusComponent implements OnInit {
   }
   ngOnInit() {
   }
-  getStudentById() {
+  getBusById() {
     this.service.getBusBybusId(this.id).subscribe(res => {
 
       this.bus = res;

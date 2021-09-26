@@ -5,3 +5,14 @@
       padding: 25px;
   }
  
+  .mat-card{
+    background-color: rgba(255, 255, 255, 0);
+}
+.mat-card-content{
+    color: black;
+}
+
+
+.mat-toolbar-row{
+    color: #fff;
+}

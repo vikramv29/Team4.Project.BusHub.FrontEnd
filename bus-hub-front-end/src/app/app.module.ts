@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule, HttpRequest } from '@angular/common/http';
+import { HttpResponse } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -36,6 +38,13 @@ import { ViewAllticketsComponent } from './view-alltickets/view-alltickets.compo
 import { ViewticketByIdComponent } from './viewticket-by-id/viewticket-by-id.component';
 // import { NewComponentComponent } from './new-component/new-component.component';
 import { AddCustomerComponent } from './add-customer/add-customer.component';
+import { UpdateCustomerComponent } from './update-customer/update-customer.component';
+import { DeleteCustomerComponent } from './delete-customer/delete-customer.component';
+import { GetAllCustomersComponent } from './get-all-customers/get-all-customers.component';
+import { GetCustomerBycustomerIdComponent } from './get-customer-bycustomer-id/get-customer-bycustomer-id.component';
+import { GetCustomersBycustomerNameComponent } from './get-customers-bycustomer-name/get-customers-bycustomer-name.component';
+import { GetCustomersBycustomerEmailIdComponent } from './get-customers-bycustomer-email-id/get-customers-bycustomer-email-id.component';
+import { ViewAllCustomersComponent } from './view-all-customers/view-all-customers.component';
 
 
 
@@ -68,7 +77,14 @@ import { AddCustomerComponent } from './add-customer/add-customer.component';
     ViewAllticketsComponent,
     ViewticketByIdComponent,
     // NewComponentComponent,
-    AddCustomerComponent
+    AddCustomerComponent,
+    UpdateCustomerComponent,
+    DeleteCustomerComponent,
+    GetAllCustomersComponent,
+    GetCustomerBycustomerIdComponent,
+    GetCustomersBycustomerNameComponent,
+    GetCustomersBycustomerEmailIdComponent,
+    ViewAllCustomersComponent
     
   ],
   imports: [
@@ -85,9 +101,7 @@ import { AddCustomerComponent } from './add-customer/add-customer.component';
     MatCardModule,
     MatSidenavModule,
     MatListModule,
-
-
-
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
