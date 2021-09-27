@@ -10,7 +10,7 @@ import { BusService } from '../bus.service';
 })
 export class UpdatebusComponent implements OnInit {
 
-  id: number;
+  busId: number;
   bus: Bus;
   flag: boolean;
   viewFlag: boolean;
@@ -22,7 +22,7 @@ export class UpdatebusComponent implements OnInit {
   ngOnInit() {
   }
   getBusById() {
-    this.service.getBusBybusId(this.id).subscribe(res => {
+    this.service.getBusBybusId(this.busId).subscribe(res => {
 
       this.bus = res;
       this.flag = false;
@@ -33,7 +33,7 @@ export class UpdatebusComponent implements OnInit {
   updateBus() {
     this.service.updateBus(this.bus).subscribe(res => {
       //this.student = new Student();
-      this.router.navigate(["/updatebus"])
+      this.router.navigate(["employeeLogin/employeedashbord/viewallbuses"])
     })
   }
 

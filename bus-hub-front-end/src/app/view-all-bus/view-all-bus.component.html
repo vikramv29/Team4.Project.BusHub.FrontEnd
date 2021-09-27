@@ -1,16 +1,16 @@
 <div class="container-fluid">
-    <div class="card" *ngFor="let buses of buses">
-        <div class="card-body">
-        <p class="card-text">Bus Id {{bus.busId}}</p>
-            <h5 class="card-title">{{bus.busName | uppercase}}</h5>
-            <p class="card-text">Bus Source {{bus.busSource}}</p>
+    <div class="card" *ngFor="let bus of buses">
+        <div class="card-body" >
+        <h5 class="card-text">Bus Name: {{bus.busName | uppercase}}</h5>
+            <p class="card-title">Bus ID: {{bus.busId}}</p>
+            <p class="card-text">Bus Source: {{bus.busSource}}</p>
             <p class="card-text">Bus Destination: {{bus.busDestination}}</p>
             <p class="card-text">Bus OnBoard Date: {{bus.busOnBoardDate}}</p>
-            <p class="card-text">Bus Arrival Date {{bus.busArrivalDate}}</p>
-            <p class="card-text">Bus Type {{bus.busType}}</p>
-            <p class="card-text">Bus Price {{bus.busPrice}}</p>
-            <p class="card-text">Bus Status {{bus.busStatus}}</p>
-            <p class="card-text">Bus Rating {{bus.busRating}}</p>
+            <p class="card-text">Bus Arrival Date: {{bus.busArrivalDate}}</p>
+            <p class="card-text">Bus Type: {{bus.busType}}</p>
+            <p class="card-text">Bus Price: {{bus.busPrice}}</p>
+            <p class="card-text">Bus Status: {{bus.busStatus}}</p>
+            <p class="card-text">Bus Rating: {{bus.busRating}}</p><br>
         </div>
     </div>
 </div>

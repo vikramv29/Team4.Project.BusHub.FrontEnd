@@ -6,43 +6,52 @@
         <form class="my-form">
            <mat-form-field class="full-width">
               <mat-label>Bus Name</mat-label>
-              <input  matInput  placeholder="Bus Name" name="Bus.busName" type="text">
+              <input  matInput  placeholder="Bus Name" name="Bus.busName" type="text" [(ngModel)] = "bus.busName" required>
+              <mat-error>This field is required</mat-error>
            </mat-form-field>
            <mat-form-field class="full-width">
               <mat-label>Bus Source</mat-label>
-              <input  matInput  placeholder="Bus Source" name="Bus.busSource" type="text">
+              <input  matInput  placeholder="Bus Source" name="Bus.busSource" type="text" [(ngModel)] = "bus.busSource" required>
+              <mat-error>This field is required</mat-error>
            </mat-form-field>
            <mat-form-field class="full-width">
             <mat-label>Bus Destination</mat-label>
-            <input  matInput  placeholder="Bus Destination" name="Bus.busDestination" type="text">
+            <input  matInput  placeholder="Bus Destination" name="Bus.busDestination" type="text" [(ngModel)] = "bus.busDestination" required>
+            <mat-error>This field is required</mat-error>
          </mat-form-field>
          <mat-form-field class="full-width">
             <mat-label>Bus OnBoard Date</mat-label>
-            <input  matInput  placeholder="Bus OnBoard Date" name="Bus.busOnBoardDate" type="text">
+            <input  matInput  placeholder="Bus OnBoard Date" name="Bus.busOnBoardDate" type="text" [(ngModel)] = "bus.busOnBoardDate" required>
+            <mat-error>This field is required</mat-error>
          </mat-form-field>
          <mat-form-field class="full-width">
             <mat-label>Bus Arrival Date</mat-label>
-            <input  matInput  placeholder="Bus Arrival Date" name="Bus.busArrivalDate" type="text">
+            <input  matInput  placeholder="Bus Arrival Date" name="Bus.busArrivalDate" type="text" [(ngModel)] = "bus.busArrivalDate" required>
+            <mat-error>This field is required</mat-error>
          </mat-form-field>
          <mat-form-field class="full-width">
             <mat-label>Bus Price</mat-label>
-            <input  matInput  placeholder="Bus Price" name="Bus.busPrice" type="number">
+            <input  matInput  placeholder="Bus Price" name="Bus.busPrice" type="number" [(ngModel)] = "bus.busPrice" required>
+            <mat-error>This field is required</mat-error>
          </mat-form-field>
          <mat-form-field class="full-width">
             <mat-label>Bus Type</mat-label>
-            <input  matInput  placeholder="Bus Type" name="Bus.busType" type="text">
+            <input  matInput  placeholder="Bus Type" name="Bus.busType" type="text" [(ngModel)] = "bus.busType" required>
+            <mat-error>This field is required</mat-error>
          </mat-form-field>
          <mat-form-field class="full-width">
             <mat-label>Bus Status</mat-label>
-            <input  matInput  placeholder="Bus Status" name="Bus.busStatus" type="text">
+            <input  matInput  placeholder="Bus Status" name="Bus.busStatus" type="text" [(ngModel)] = "bus.busStatus" required>
+            <mat-error>This field is required</mat-error>
          </mat-form-field>
          <mat-form-field class="full-width">
             <mat-label>Bus Rating</mat-label>
-            <input  matInput  placeholder="Bus Rating" name="Bus.busRating" type="number">
+            <input  matInput  placeholder="Bus Rating" name="Bus.busRating" type="number" [(ngModel)] = "bus.busRating" required>
+            <mat-error>This field is required</mat-error>
          </mat-form-field>
         </form>
      </mat-card-content>
      <mat-card-actions>
-        <button mat-raised-button (click)="addBus()" color="primary">ADD BUS</button>
+        <button mat-raised-button (click)="addBus()" color="primary" type="submit">ADD BUS</button>
      </mat-card-actions>
   </mat-card> 

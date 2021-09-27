@@ -18,7 +18,7 @@ export class AddbusComponent  {
    public addBus(){
      this.service.addBus(this.bus).subscribe(res =>{
        this.bus= new Bus() ;
-       this.router.navigate(['/viewallbuses']);
+       this.router.navigate(['employeeLogin/employeedashbord/viewallbuses']);
      })
    }
 
