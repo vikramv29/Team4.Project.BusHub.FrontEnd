@@ -22,18 +22,18 @@ export class BusService {
    return this.http.delete(this.url+"/{busId}") ;
   }
   public getAllBuses(): Observable<Bus[]>{
-    return this.http.get<Bus[]>(this.url+ "s") ;
+    return this.http.get<Bus[]>(this.url+ "es") ;
   }
   public getBusBybusId(busId: number): Observable<Bus> {
-    return this.http.get<Bus>(this.url + "/" + busId);
+    return this.http.get<Bus>(this.url + "/busId/" + busId);
   }
   public getBusesBybusName(busName:string): Observable<Bus[]>{
-    return this.http.get<Bus[]>(this.url+ "s") ;
+    return this.http.get<Bus[]>(this.url+ "es") ;
   }
   public getBusesBybusSource(busSource:string): Observable<Bus[]>{
-    return this.http.get<Bus[]>(this.url+ "s") ;
+    return this.http.get<Bus[]>(this.url+ "es") ;
   }
   public getBusesBybusType(busSource:string): Observable<Bus[]>{
-    return this.http.get<Bus[]>(this.url+ "s") ;
+    return this.http.get<Bus[]>(this.url+ "es") ;
   }
 }
