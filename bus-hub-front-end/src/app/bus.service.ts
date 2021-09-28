@@ -28,12 +28,12 @@ export class BusService {
     return this.http.get<Bus>(this.url + "/busId/" + busId);
   }
   public getBusesBybusName(busName:string): Observable<Bus[]>{
-    return this.http.get<Bus[]>(this.url+ "es") ;
+    return this.http.get<Bus[]>(this.url+ "es/busName/"+ busName) ;
   }
   public getBusesBybusSource(busSource:string): Observable<Bus[]>{
-    return this.http.get<Bus[]>(this.url+ "es") ;
+    return this.http.get<Bus[]>(this.url+ "es/busSource/"+busSource) ;
   }
-  public getBusesBybusType(busSource:string): Observable<Bus[]>{
-    return this.http.get<Bus[]>(this.url+ "es") ;
+  public getBusesBybusType(busType:string): Observable<Bus[]>{
+    return this.http.get<Bus[]>(this.url+ "es/busType/"+busType) ;
   }
 }
