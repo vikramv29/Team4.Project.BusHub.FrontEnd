@@ -40,11 +40,12 @@ import { ViewticketByIdComponent } from './viewticket-by-id/viewticket-by-id.com
 import { AddCustomerComponent } from './add-customer/add-customer.component';
 import { UpdateCustomerComponent } from './update-customer/update-customer.component';
 import { DeleteCustomerComponent } from './delete-customer/delete-customer.component';
-import { GetAllCustomersComponent } from './get-all-customers/get-all-customers.component';
+// import { GetAllCustomersComponent } from './get-all-customers/get-all-customers.component';
 import { GetCustomerBycustomerIdComponent } from './get-customer-bycustomer-id/get-customer-bycustomer-id.component';
 import { GetCustomersBycustomerNameComponent } from './get-customers-bycustomer-name/get-customers-bycustomer-name.component';
 import { GetCustomersBycustomerEmailIdComponent } from './get-customers-bycustomer-email-id/get-customers-bycustomer-email-id.component';
 import { ViewAllCustomersComponent } from './view-all-customers/view-all-customers.component';
+import { AddTicketComponent } from './add-ticket/add-ticket.component';
 
 
 
@@ -80,11 +81,12 @@ import { ViewAllCustomersComponent } from './view-all-customers/view-all-custome
     AddCustomerComponent,
     UpdateCustomerComponent,
     DeleteCustomerComponent,
-    GetAllCustomersComponent,
+    // GetAllCustomersComponent,
     GetCustomerBycustomerIdComponent,
     GetCustomersBycustomerNameComponent,
     GetCustomersBycustomerEmailIdComponent,
-    ViewAllCustomersComponent
+    ViewAllCustomersComponent,
+    AddTicketComponent
     
   ],
   imports: [

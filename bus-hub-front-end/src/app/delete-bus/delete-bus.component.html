@@ -1,16 +1,11 @@
-<mat-toolbar>
-    <span>DELETE BUS</span>
-  </mat-toolbar>
-  <mat-card class="my-card">
-     <mat-card-content>
-        <form class="my-form">
-           <mat-form-field class="full-width">
-              <mat-label>Enter ID to be deleted</mat-label>
-              <input  matInput  placeholder="Bus ID" name="Bus.busId" type="number" [(ngModel)] = "id">
-           </mat-form-field>
-        </form>
-    </mat-card-content>
-    <mat-card-actions>
-       <button mat-raised-button (click)="deleteBusById()" color="primary">DELETE BUS</button>
-    </mat-card-actions>
- </mat-card> 
+<div class="container">
+   <h3 class="nav justify-content-center" *ngIf="!flag">No such Bus Exists In Database.</h3>
+
+   <div class="mb-5" *ngIf="flag">
+       <label for="id" class="form-label">Enter Id to Delete Bus:</label>
+       <input type="number" class="form-control" [(ngModel)]="busId">
+   </div>
+   <button *ngIf="flag" type="button" class="btn btn-primary" style="background:red" (click)="deleteBusById()">Delete
+   Bus</button>
+
+</div>

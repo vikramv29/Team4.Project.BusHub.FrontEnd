@@ -19,7 +19,7 @@ export class BusService {
     return this.http.post<Bus>(this.url, bus) ;
   }
   public deleteBus(busId: number): Observable<any> {
-   return this.http.delete(this.url+"/{busId}") ;
+   return this.http.delete(this.url + "/busId/" + busId) ;
   }
   public getAllBuses(): Observable<Bus[]>{
     return this.http.get<Bus[]>(this.url+ "es") ;

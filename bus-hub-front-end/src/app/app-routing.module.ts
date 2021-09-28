@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { AddTicketComponent } from './add-ticket/add-ticket.component';
 import { AddbusComponent } from './addbus/addbus.component';
 import { CustomerDashbordComponent } from './customer-dashbord/customer-dashbord.component';
 import { DeleteBusComponent } from './delete-bus/delete-bus.component';
@@ -50,6 +51,7 @@ const routes: Routes = [
   {path: 'login/customerdahbord/updatecustomer', component: UpdateCustomerComponent},
   {path: 'employeeLogin/employeedashbord/viewallbuses', component: ViewAllBusComponent},
   {path: 'employeeLogin/employeedashbord/viewallcustomers', component: ViewAllCustomersComponent},
+  {path: 'login/customerdashbord/addticket', component: AddTicketComponent},
   {path: 'employeeLogin/employeedashbord/viewalltickets', component: ViewAllticketsComponent},
   {path: 'employeeLogin/employeedashbord/viewticketbyid', component: ViewticketByIdComponent}
 

@@ -6,7 +6,7 @@ import { Ticket } from './ticket';
 @Injectable({
   providedIn: 'root'
 })
-export class CustomerService {
+export class TicketService {
 
   private url: string;
   constructor(private http: HttpClient) {
@@ -19,6 +19,6 @@ export class CustomerService {
     return this.http.get<Ticket[]>(this.url+ "s") ;
   }
   public getTicketByticketId(ticketId: number): Observable<Ticket> {
-    return this.http.get<Ticket>(this.url + "/" + ticketId);
+    return this.http.get<Ticket>(this.url + "/ticketId/" + ticketId);
   }
 }
