@@ -9,7 +9,7 @@ import { BusService } from '../bus.service';
   styleUrls: ['./delete-bus.component.css']
 })
 export class DeleteBusComponent implements OnInit {
-  id: number;
+  busId: number;
   busList: Bus[];
   flag: boolean;
   constructor(private service: BusService, private router: Router) {
@@ -27,8 +27,8 @@ export class DeleteBusComponent implements OnInit {
   }
 
   public deleteBusById() {
-    this.service.deleteBus(this.id).subscribe(res => {
-      this.router.navigate(["/viewallbuses"]);
+    this.service.deleteBus(this.busId).subscribe(res => {
+      this.router.navigate(["/employeeLogin/employeedashbord/viewallbuses"]);
     });
 
   }

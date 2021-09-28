@@ -20,7 +20,7 @@ export class LoginComponent {
     // let password = "nikhil";
 
     // if(this.customer.customerEmailId == email && this.customer.customerPassword == password){
-      this.router.navigate(['/customerdashbord']);
+      this.router.navigate(['/login/customerdashbord']);
     
 
   }

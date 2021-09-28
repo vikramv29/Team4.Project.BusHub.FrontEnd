@@ -18,7 +18,7 @@ export class AddCustomerComponent  {
    public addCustomer(){
      this.service.addCustomer(this.customer).subscribe(res =>{
        this.customer= new Customer() ;
-       this.router.navigate(['/viewallcustomers']);
+       this.router.navigate(['/employeeLogin/employeedashbord/viewallcustomers']);
      })
    }
 

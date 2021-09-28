@@ -10,7 +10,7 @@ import { CustomerService } from '../customer.service';
 })
 export class UpdateCustomerComponent implements OnInit {
 
-  id: number;
+  customerId: number;
   customer: Customer;
   flag: boolean;
   viewFlag: boolean;
@@ -22,7 +22,7 @@ export class UpdateCustomerComponent implements OnInit {
   ngOnInit() {
   }
   getCustomerById() {
-    this.service.getCustomerBycustomerId(this.id).subscribe(res => {
+    this.service.getCustomerBycustomerId(this.customerId).subscribe(res => {
 
       this.customer = res;
       this.flag = false;
@@ -33,7 +33,7 @@ export class UpdateCustomerComponent implements OnInit {
   updateCustomer() {
     this.service.updateCustomer(this.customer).subscribe(res => {
       //this.student = new Student();
-      this.router.navigate(["/updatecustomer"])
+      this.router.navigate(["/employeeLogin/employeedashbord/viewallcustomers"])
     })
   }
 
