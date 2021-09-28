@@ -10,6 +10,7 @@ import { BusService} from '../bus.service';
 export class ViewAllBusComponent  implements OnInit {
 
   private buses: Bus[];
+  
   constructor(private service: BusService) {
 
    }

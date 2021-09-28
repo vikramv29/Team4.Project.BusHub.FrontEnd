@@ -27,6 +27,7 @@ export class UpdatebusComponent implements OnInit {
       this.bus = res;
       this.flag = false;
       this.viewFlag = false;
+      
     })
   }
 

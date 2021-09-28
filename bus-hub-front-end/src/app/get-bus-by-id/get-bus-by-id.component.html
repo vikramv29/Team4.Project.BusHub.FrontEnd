@@ -1,1 +1,31 @@
-<p>get-bus-by-id works!</p>
+<div class="container" *ngIf="flag">
+    
+  
+    <div class="mb-5" *ngIf="flag">
+        <label for="id" class="form-label">Enter BusID :</label>
+        <input id = "id" type="number" class="form-control" [(ngModel)]="busId" required>
+    </div>
+    <button *ngIf="flag" type="button" class="btn btn-primary" style="background:red" (click)="getBusById()">Search
+    Bus</button>
+ 
+  </div>
+
+  <h3 class="nav justify-content-center" *ngIf="!flag">No Bus Exists In Database.</h3>
+
+
+<div class="container-fluid" *ngIf="viewflag">
+    <div class="card">
+        <div class="card-body" >
+        <h5 class="card-text">Bus Name: {{bus.busName | uppercase}}</h5>
+            <p class="card-title">Bus ID: {{bus.busId}}</p>
+            <p class="card-text">Bus Source: {{bus.busSource}}</p>
+            <p class="card-text">Bus Destination: {{bus.busDestination}}</p>
+            <p class="card-text">Bus OnBoard Date: {{bus.busOnBoardDate}}</p>
+            <p class="card-text">Bus Arrival Date: {{bus.busArrivalDate}}</p>
+            <p class="card-text">Bus Type: {{bus.busType}}</p>
+            <p class="card-text">Bus Price: {{bus.busPrice}}</p>
+            <p class="card-text">Bus Status: {{bus.busStatus}}</p>
+            <p class="card-text">Bus Rating: {{bus.busRating}}</p><br>
+        </div>
+    </div>
+</div>
