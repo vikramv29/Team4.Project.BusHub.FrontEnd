@@ -12,6 +12,9 @@ export class CustomerService {
   constructor(private http: HttpClient) {
     this.url= "http://localhost:9090/customer" ;
    }
+   public loginCustomer(customer:Customer) :Observable <any> {
+    return this.http.post<any>(this.url+"/logincheck", customer);
+  }
    public addCustomer(customer: Customer): Observable<Customer>{
      return this.http.post<Customer>(this.url, customer) ;
    }
