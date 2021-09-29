@@ -19,15 +19,15 @@ export class LoginComponent{
   flag: boolean=false;
 
 
-  constructor(private _service: CustomerService, private route: Router) { }
+  constructor(private service: CustomerService, private route: Router) { }
 
   public loginCustomer() {
-    this._service.loginCustomer(this.customer).subscribe(
+    this.service.loginCustomer(this.customer).subscribe(
       data => {
         console.log("response received");
         localStorage.setItem('token',JSON.stringify(data));
-        this.route.navigate(['/home']);
-         alertify.success("Successfully Loged In");
+        this.route.navigate(['/login/customerdashbord']);
+         alertify.success("Successfully Logged In");
         // alertyfy
         // .alert("This is an alert dialog.", function(){
         //   alertyfy.message('OK');
