@@ -28,9 +28,9 @@ export class CustomerService {
     return this.http.get<Customer>(this.url + "/customerId/" + customerId);
   }
   public getCustomersBycustomerName(customerName:string): Observable<Customer[]>{
-    return this.http.get<Customer[]>(this.url+ "s") ;
+    return this.http.get<Customer[]>(this.url+ "s/customerName/" + customerName) ;
   }
-  public getCustomersBycustomerEmailId(customerEmailId:string): Observable<Customer[]>{
-    return this.http.get<Customer[]>(this.url+ "s") ;
+  public getCustomerBycustomerEmailId(customerEmailId: string): Observable<Customer>{
+    return this.http.get<Customer>(this.url+ "s/customerEmailId/" + customerEmailId) ;
   }
 }
