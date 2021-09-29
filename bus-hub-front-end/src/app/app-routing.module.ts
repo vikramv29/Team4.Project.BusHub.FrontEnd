@@ -11,6 +11,9 @@ import { GetBusByIdComponent } from './get-bus-by-id/get-bus-by-id.component';
 import { GetBusByNameComponent } from './get-bus-by-name/get-bus-by-name.component';
 import { GetBusBySourceComponent } from './get-bus-by-source/get-bus-by-source.component';
 import { GetBusBytypeComponent } from './get-bus-bytype/get-bus-bytype.component';
+import { GetCustomerBycustomerIdComponent } from './get-customer-bycustomer-id/get-customer-bycustomer-id.component';
+import { GetCustomersBycustomerEmailIdComponent } from './get-customers-bycustomer-email-id/get-customers-bycustomer-email-id.component';
+import { GetCustomersBycustomerNameComponent } from './get-customers-bycustomer-name/get-customers-bycustomer-name.component';
 // import { GetCustomerbynameComponent } from './get-customerbyname/get-customerbyname.component';
 // import { GetCustomeridComponent } from './get-customerid/get-customerid.component';
 import { LoginComponent } from './login/login.component';
@@ -53,8 +56,10 @@ const routes: Routes = [
   {path: 'employeeLogin/employeedashbord/viewallcustomers', component: ViewAllCustomersComponent},
   {path: 'login/customerdashbord/addticket', component: AddTicketComponent},
   {path: 'employeeLogin/employeedashbord/viewalltickets', component: ViewAllticketsComponent},
-  {path: 'employeeLogin/employeedashbord/viewticketbyid', component: ViewticketByIdComponent}
-
+  {path: 'employeeLogin/employeedashbord/viewticketbyid', component: ViewticketByIdComponent},
+  {path: 'login/customerdashbord/getcustomerbyid', component: GetCustomerBycustomerIdComponent},
+  {path: 'login/customerdashbord/getcustomerbyname', component: GetCustomersBycustomerNameComponent},
+  {path: 'login/customerdashbord/getcustomerbyemailid', component: GetCustomersBycustomerEmailIdComponent }
 ];
 
 @NgModule({
