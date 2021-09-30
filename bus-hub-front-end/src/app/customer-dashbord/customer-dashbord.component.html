@@ -1,14 +1,17 @@
 <mat-toolbar color="primary">
     <mat-toolbar-row>
       <!--  <span>HOME</span> -->
+      <button mat-button [matMenuTriggerFor]="Buses">Manage Buses</button>
+      <mat-menu #Buses="matMenu">
+         <a mat-button routerLink="/login/customerdashbord/searchbyid">Search by id</a><br>
+         <a mat-button routerLink="/login/customerdashbord/searchbyname">Search by name</a><br>
+         <a mat-button routerLink="/login/customerdashbord/searchbysource">search by source</a><br>
+         <a mat-button routerLink="/login/customerdashbord/searchbytype">search by type</a><br>
+         
+      </mat-menu>
        
-       <span class="spacer"></span>
-       <a mat-button routerLink="/login/customerdashbord/searchbyid">Search by id</a>
-       <a mat-button routerLink="/login/customerdashbord/searchbyname">Search by name</a>
-       <a mat-button routerLink="/login/customerdashbord/searchbysource">search by source</a>
-       <a mat-button routerLink="/login/customerdashbord/searchbytype">search by type</a>
-
-       <span><a href="/">Log out</a></span>
+      <span class="spacer"></span>
+       <span><a href="/home" class="a-tag">Log out</a></span>
     </mat-toolbar-row>
   </mat-toolbar>
   <mat-card class="my-card">
@@ -33,7 +36,7 @@
         </form>
      </mat-card-content>
      <mat-card-actions>
-        <button mat-raised-button (click)="login()" color="primary">Search</button>
+        <button mat-raised-button (click)="loginCustomer()" color="primary">Search</button>
      </mat-card-actions>
   </mat-card>   
   <router-outlet></router-outlet>

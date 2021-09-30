@@ -1,4 +1,30 @@
-<div class="container" *ngIf="flag">
+<mat-toolbar>
+    <span>GET CUSTOMER BY ID</span>
+  </mat-toolbar>
+  <mat-card class="my-card">
+     <mat-card-content>
+        <form class="my-form">
+           <mat-form-field class="full-width">
+              <mat-label>Enter Customer Id</mat-label>
+              <input  matInput  placeholder="Customer id" name="customer.customerId"  [(ngModel)] = "customerId" required>
+              <mat-error>Customer Id should not be empty</mat-error>
+           </mat-form-field>
+        </form>
+    </mat-card-content>
+    <mat-card-actions>
+       <button mat-raised-button (click)="getCustomerById()" color="primary">SEARCH CUSTOMER</button>
+    </mat-card-actions>
+ </mat-card> 
+
+
+
+
+
+
+
+
+
+<!--<div class="container" *ngIf="flag">
     
   
     <div class="mb-5" *ngIf="flag">
@@ -8,7 +34,7 @@
     <button *ngIf="flag" type="button" class="btn btn-primary" style="background:red" (click)="getCustomerById()">Search
     Customer</button>
  
-  </div>
+  </div> -->
 
   <h3 class="nav justify-content-center" *ngIf="!flag">No such Customer Exists In Database.</h3>
 

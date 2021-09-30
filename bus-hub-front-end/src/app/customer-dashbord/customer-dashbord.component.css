@@ -1,18 +1,16 @@
-.spacer {
-    flex: 1 1 auto;
-  }
-  #space{
-      padding: 25px;
-  }
- 
-  .mat-card{
+.mat-toolbar{
     background-color: rgba(255, 255, 255, 0);
 }
-.mat-card-content{
-    color: black;
+
+.mat-sidenav-container{
+    background-color: rgba(255, 255, 255, 0);
 }
-
-
-.mat-toolbar-row{
-    color: #fff;
+.a-tag{
+    text-decoration: none;
+}
+.spacer {
+    flex: 1 1 auto;
+}
+.b-color{
+    color: blue;
 }
