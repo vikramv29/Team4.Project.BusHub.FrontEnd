@@ -1,4 +1,45 @@
-<div class="container">
+<mat-toolbar>
+   <span>DELETE BUS</span>
+ </mat-toolbar>
+ <mat-card class="my-card">
+    <mat-card-content>
+       <form class="my-form">
+          <mat-form-field class="full-width">
+             <mat-label>Enter ID to delete bus</mat-label>
+             <input  matInput  placeholder="Bus ID" name="Bus.busId"  [(ngModel)] = "busId" required>
+             <mat-error>Id should not be empty</mat-error>
+          </mat-form-field>
+       </form>
+   </mat-card-content>
+   <mat-card-actions>
+      <button mat-raised-button (click)="deleteBusById()" color="primary">DELETE BUS</button>
+   </mat-card-actions>
+</mat-card> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="container">
   
 
    <div class="mb-5" *ngIf="flag">
@@ -14,4 +55,4 @@
    <button *ngIf="flag" type="button" class="btn btn-primary" style="background:red" (click)="deleteBusById()">Delete
    Bus</button>
 
-</div>
+</div> -->

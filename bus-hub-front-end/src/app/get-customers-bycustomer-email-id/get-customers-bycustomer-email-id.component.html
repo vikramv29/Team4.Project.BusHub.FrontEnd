@@ -1,4 +1,25 @@
-<div class="container" *ngIf="flag">
+<mat-toolbar>
+    <span>GET CUSTOMER BY EMAILID</span>
+  </mat-toolbar>
+  <mat-card class="my-card">
+     <mat-card-content>
+        <form class="my-form">
+           <mat-form-field class="full-width">
+              <mat-label>Enter Customer Emailid</mat-label>
+              <input  matInput  placeholder="Customer EmailId" name="customer.customerEmailId"  [(ngModel)] = "customer.customerEmailId" required>
+              <mat-error>Customer EmailId should not be empty</mat-error>
+           </mat-form-field>
+        </form>
+    </mat-card-content>
+    <mat-card-actions>
+       <button mat-raised-button (click)="getCustomerByEmailId()" color="primary">SEARCH CUSTOMER</button>
+    </mat-card-actions>
+ </mat-card> 
+
+
+
+
+<!-- <div class="container" *ngIf="flag">
     
   
     <div class="mb-5" *ngIf="flag">
@@ -8,7 +29,7 @@
     <button *ngIf="flag" type="button" class="btn btn-primary" style="background:red" (click)="getCustomerByEmailId()">Search
     Customer</button>
  
-  </div>
+  </div> -->
 
   <h3 class="nav justify-content-center" *ngIf="!flag">No such Customer Exists In Database.</h3>
 

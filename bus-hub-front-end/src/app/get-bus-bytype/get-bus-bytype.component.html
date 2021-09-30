@@ -1,4 +1,24 @@
-<div class="container" *ngIf="flag">
+<mat-toolbar>
+    <span>GET BUS BY BUS TYPE</span>
+  </mat-toolbar>
+  <mat-card class="my-card">
+     <mat-card-content>
+        <form class="my-form">
+           <mat-form-field class="full-width">
+              <mat-label>Enter Bus type</mat-label>
+              <input  matInput  placeholder="Bus Type" name="bus.busType"  [(ngModel)] = "bus.busType" required>
+              <mat-error>Bus type should not be empty</mat-error>
+           </mat-form-field>
+        </form>
+    </mat-card-content>
+    <mat-card-actions>
+       <button mat-raised-button (click)="getBusByType()" color="primary">SEARCH BUS</button>
+    </mat-card-actions>
+ </mat-card> 
+
+
+
+<!-- <div class="container" *ngIf="flag">
     
   
     <div class="mb-5" *ngIf="flag">
@@ -8,7 +28,7 @@
     <button *ngIf="flag" type="button" class="btn btn-primary" style="background:red" (click)="getBusByType()">Search
     Buses</button>
  
-  </div>
+  </div> -->
 
   <h3 class="nav justify-content-center" *ngIf="!flag">No Bus Exists In Database.</h3>
 

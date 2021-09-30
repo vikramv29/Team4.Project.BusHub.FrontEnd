@@ -1,1 +1,27 @@
-<p>viewticket-by-id works!</p>
+<div class="container" *ngIf="flag">
+    
+  
+    <div class="mb-5" *ngIf="flag">
+        <label for="id" class="form-label">Enter TicketID :</label>
+        <input id = "id" type="number" class="form-control" [(ngModel)]="ticketId" required>
+    </div>
+    <button *ngIf="flag" type="button" class="btn btn-primary" style="background:red" (click)="getTicketById()">Search
+    Ticket</button>
+ 
+  </div>
+
+  <h3 class="nav justify-content-center" *ngIf="!flag">No such Ticket Exists In Database.</h3>
+
+
+<div class="container-fluid" *ngIf="viewflag">
+    <div class="card">
+        <div class="card-body" >
+        <h5 class="card-text">Ticket ID: {{ticket.ticketID}}</h5>
+        <p class="card-text">Customer Name: {{customer.customerName}}</p>
+        <p class="card-title">Customer ID: {{customer.customerId}}</p>
+        <p class="card-text">Bus Name: {{bus.busId}}</p>
+        <p class="card-text">Bus Price: {{bus.busPrice}}</p>
+        <p class="card-text">Customer EmailId: {{customer.customerEmailId}}</p>
+        </div>
+    </div>
+</div>

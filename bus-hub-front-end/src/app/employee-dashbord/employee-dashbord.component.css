@@ -5,3 +5,12 @@
 .mat-sidenav-container{
     background-color: rgba(255, 255, 255, 0);
 }
+.a-tag{
+    text-decoration: none;
+}
+.spacer {
+    flex: 1 1 auto;
+}
+.b-color{
+    color: blue;
+}

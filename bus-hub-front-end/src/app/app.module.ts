@@ -9,7 +9,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MyMaterialModule } from './material.module';
 import { FormsModule } from '@angular/forms';
 
-import {MatNativeDateModule,MatIconModule,MatButtonModule, MatSidenavModule, MatListModule} from '@angular/material';
+import {MatNativeDateModule,MatIconModule,MatButtonModule, MatSidenavModule, MatListModule, MatMenuModule} from '@angular/material';
 import {MatDatepickerModule} from  '@angular/material/datepicker';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
@@ -46,6 +46,7 @@ import { GetCustomersBycustomerNameComponent } from './get-customers-bycustomer-
 import { GetCustomersBycustomerEmailIdComponent } from './get-customers-bycustomer-email-id/get-customers-bycustomer-email-id.component';
 import { ViewAllCustomersComponent } from './view-all-customers/view-all-customers.component';
 import { AddTicketComponent } from './add-ticket/add-ticket.component';
+import { HomeComponent } from './home/home.component';
 
 
 
@@ -86,7 +87,8 @@ import { AddTicketComponent } from './add-ticket/add-ticket.component';
     GetCustomersBycustomerNameComponent,
     GetCustomersBycustomerEmailIdComponent,
     ViewAllCustomersComponent,
-    AddTicketComponent
+    AddTicketComponent,
+    HomeComponent
     
   ],
   imports: [
@@ -103,7 +105,8 @@ import { AddTicketComponent } from './add-ticket/add-ticket.component';
     MatCardModule,
     MatSidenavModule,
     MatListModule,
-    HttpClientModule
+    HttpClientModule,
+    MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]

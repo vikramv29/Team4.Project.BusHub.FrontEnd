@@ -14,6 +14,7 @@ import { GetBusBytypeComponent } from './get-bus-bytype/get-bus-bytype.component
 import { GetCustomerBycustomerIdComponent } from './get-customer-bycustomer-id/get-customer-bycustomer-id.component';
 import { GetCustomersBycustomerEmailIdComponent } from './get-customers-bycustomer-email-id/get-customers-bycustomer-email-id.component';
 import { GetCustomersBycustomerNameComponent } from './get-customers-bycustomer-name/get-customers-bycustomer-name.component';
+import { HomeComponent } from './home/home.component';
 // import { GetCustomerbynameComponent } from './get-customerbyname/get-customerbyname.component';
 // import { GetCustomeridComponent } from './get-customerid/get-customerid.component';
 import { LoginComponent } from './login/login.component';
@@ -37,10 +38,10 @@ const routes: Routes = [
   {path: 'employeeLogin', component: EmployeeloginComponent},
   {path: 'login/customerdashbord', component: CustomerDashbordComponent},
   {path: 'employeeLogin/employeedashbord', component: EmployeeDashbordComponent},
-  {path: 'login/customerdashbord/searchbyid', component: SearchByIdComponent},
-  {path: 'login/customerdashbord/searchbyname', component: SearchByNameComponent},
-  {path: 'login/customerdashbord/searchbytype', component: SearchByBusTypeComponent},
-  {path: 'login/customerdashbord/searchbysource', component: SearchBySourceComponent},
+  {path: 'login/customerdashbord/searchbyid', component: GetBusByIdComponent},
+  {path: 'login/customerdashbord/searchbyname', component: GetBusByNameComponent},
+  {path: 'login/customerdashbord/searchbytype', component: GetBusBytypeComponent},
+  {path: 'login/customerdashbord/searchbysource', component: GetBusBySourceComponent},
   {path: 'employeeLogin/employeedashbord/addbus', component: AddbusComponent},
   {path: 'employeeLogin/employeedashbord/deletebus', component:DeleteBusComponent },
   // {path: 'employeeLogin/employeedashbord/allcustomers', component: GetAllCustomerComponent},
@@ -59,7 +60,13 @@ const routes: Routes = [
   {path: 'employeeLogin/employeedashbord/viewticketbyid', component: ViewticketByIdComponent},
   {path: 'login/customerdashbord/getcustomerbyid', component: GetCustomerBycustomerIdComponent},
   {path: 'login/customerdashbord/getcustomerbyname', component: GetCustomersBycustomerNameComponent},
-  {path: 'login/customerdashbord/getcustomerbyemailid', component: GetCustomersBycustomerEmailIdComponent }
+  {path: 'login/customerdashbord/getcustomerbyemailid', component: GetCustomersBycustomerEmailIdComponent },
+  {path: 'home', component: HomeComponent},
+  {path: 'employeeLogin/employeedashbord/allcustomers', component: ViewAllCustomersComponent},
+  {path:'employeeLogin/employeedashbord/getcustomerbyid', component: GetCustomerBycustomerIdComponent},
+  {path:'employeeLogin/employeedashbord/getcustomerbyname', component: GetCustomersBycustomerNameComponent},
+  
+
 ];
 
 @NgModule({

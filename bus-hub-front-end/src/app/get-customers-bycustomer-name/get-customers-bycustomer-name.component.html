@@ -1,4 +1,35 @@
-<div class="container" *ngIf="flag">
+<mat-toolbar>
+    <span>GET CUSTOMER BY NAME</span>
+  </mat-toolbar>
+  <mat-card class="my-card">
+     <mat-card-content>
+        <form class="my-form">
+           <mat-form-field class="full-width">
+              <mat-label>Enter Customer Name</mat-label>
+              <input  matInput  placeholder="Customer Name" name="customer.customerName"  [(ngModel)] = "customer.customerName" required>
+              <mat-error>Customer name should not be empty</mat-error>
+           </mat-form-field>
+        </form>
+    </mat-card-content>
+    <mat-card-actions>
+       <button mat-raised-button (click)="getCustomerByName()" color="primary">SEARCH CUSTOMER</button>
+    </mat-card-actions>
+ </mat-card> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<div class="container" *ngIf="flag">
     
   
     <div class="mb-5" *ngIf="flag">
@@ -8,7 +39,7 @@
     <button *ngIf="flag" type="button" class="btn btn-primary" style="background:red" (click)="getCustomerByName()">Search
     Customers</button>
  
-  </div>
+  </div> -->
 
   <h3 class="nav justify-content-center" *ngIf="!flag">No such Customer Exists In Database.</h3>
 

@@ -1,1 +1,12 @@
-<p>view-alltickets works!</p>
+<div class="container-fluid">
+    <div class="card" *ngFor="let ticket of tickets">
+        <div class="card-body" >
+        <h5 class="card-text">Ticket Id: {{ticket.ticketId}}</h5>
+            <p class="card-title">Customer ID: {{customer.customerId}}</p>
+            <p class="card-text">Customer Name: {{customer.customerName}}</p>
+            <p class="card-text">Bus Name: {{bus.busId}}</p>
+            <p class="card-text">Bus Price: {{bus.busPrice}}</p>
+            <p class="card-text">Customer EmailId: {{customer.customerEmailId}}</p>
+        </div>
+    </div>
+</div>
