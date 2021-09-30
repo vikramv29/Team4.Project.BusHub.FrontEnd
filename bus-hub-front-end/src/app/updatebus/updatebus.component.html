@@ -1,0 +1,116 @@
+<mat-toolbar>
+   <span>UPDATE BUS</span>
+ </mat-toolbar>
+ <mat-card class="my-card">
+    <mat-card-content>
+       <div *ngIf="flag">
+      <form class="my-form" >
+         <mat-form-field class="full-width">
+            <mat-label>Enter bus id</mat-label>
+            <input  matInput  placeholder="Bus Name" name="Bus.busId" type="text" [(ngModel)] = "bus.busId" required>
+            <mat-error>This field is required</mat-error>
+         </mat-form-field>
+      </form>
+   </div>
+   <div *ngIf="!viewFlag">
+      <form class="my-form"  >
+         <mat-form-field class="full-width">
+            <mat-label>Bus Name</mat-label>
+            <input  matInput  placeholder="Bus Name" name="Bus.busName" type="text" [(ngModel)] = "bus.busName" required>
+            <mat-error>This field is required</mat-error>
+         </mat-form-field>
+         <mat-form-field class="full-width">
+            <mat-label>Bus Source</mat-label>
+            <input  matInput  placeholder="Bus Source" name="Bus.busSource" type="text" [(ngModel)] = "bus.busSource" required>
+            <mat-error>This field is required</mat-error>
+         </mat-form-field>
+         <mat-form-field class="full-width">
+          <mat-label>Bus Destination</mat-label>
+          <input  matInput  placeholder="Bus Destination" name="Bus.busDestination" type="text" [(ngModel)] = "bus.busDestination" required>
+          <mat-error>This field is required</mat-error>
+       </mat-form-field>
+       <mat-form-field class="full-width">
+          <mat-label>Bus OnBoard Date</mat-label>
+          <input  matInput  placeholder="Bus OnBoard Date" name="Bus.busOnBoardDate" type="text" [(ngModel)] = "bus.busOnBoardDate" required>
+          <mat-error>This field is required</mat-error>
+       </mat-form-field>
+       <mat-form-field class="full-width">
+          <mat-label>Bus Arrival Date</mat-label>
+          <input  matInput  placeholder="Bus Arrival Date" name="Bus.busArrivalDate" type="text" [(ngModel)] = "bus.busArrivalDate" required> 
+          <mat-error>This field is required</mat-error>
+       </mat-form-field>
+       <mat-form-field class="full-width">
+          <mat-label>Bus Price</mat-label>
+          <input  matInput  placeholder="Bus Price" name="Bus.busPrice" type="number" [(ngModel)] = "bus.busPrice" required>
+          <mat-error>This field is required</mat-error>
+       </mat-form-field>
+       <mat-form-field class="full-width">
+          <mat-label>Bus Type</mat-label>
+          <input  matInput  placeholder="Bus Type" name="Bus.busType" type="text" [(ngModel)] = "bus.busType" required>
+          <mat-error>This field is required</mat-error>
+       </mat-form-field>
+       <mat-form-field class="full-width">
+          <mat-label>Bus Status</mat-label>
+          <input  matInput  placeholder="Bus Status" name="Bus.busStatus" type="text" [(ngModel)] = "bus.busStatus" required>
+          <mat-error>This field is required</mat-error>
+       </mat-form-field>
+       <mat-form-field class="full-width">
+          <mat-label>Bus Rating</mat-label>
+          <input  matInput  placeholder="Bus Rating" name="Bus.busRating" type="number" [(ngModel)] = "bus.busRating" required>
+          <mat-error>This field is required</mat-error>
+       </mat-form-field>
+
+      </form>
+      
+   </div>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-raised-button (click)="getBusById()" color="primary" type="submit" *ngIf="flag">Search Bus</button>
+   </mat-card-actions>
+   <mat-card-actions>
+      <button mat-raised-button (click)="updateBus()" color="primary" type="submit" *ngIf="!viewFlag">Update Bus</button>
+   </mat-card-actions>
+
+ </mat-card>
+
+
+ <!-- <div class="container" *ngIf="viewFlag">
+   <h3 class="nav justify-content-center" *ngIf="!flag">No Bus Exists In Database.</h3>
+ 
+   <div class="mb-5" *ngIf="flag">
+       <label for="id" class="form-label">Enter Id to Update Bus:</label>
+       <input id = "id" type="number" class="form-control" [(ngModel)]="busId" required>
+   </div>
+   <button *ngIf="flag" type="button" class="btn btn-primary" style="background:red" (click)="getBusById()">Search
+   Bus</button>
+
+ </div>
+
+
+ 
+ <div class="container-fluid" *ngIf="!viewFlag">
+   <label for = "busname">Bus Name   </label>
+   <input id = "busname" class="form-control" type="text" value="{{bus.busName}}" [(ngModel)]="bus.busName" required><br><br>
+   <label></label>
+  
+   <label for = "busprice">Bus Price  </label>
+   <input id= "busprice" class="form-control" type="number" value="{{bus.busPrice}}" [(ngModel)]="bus.busPrice" required>
+   <br />
+   <br />
+
+   <label for = "busrating">Bus Rating  </label>
+   <input id= "busrating" class="form-control" type="number" value="{{bus.busRating}}" [(ngModel)]="bus.busRating" required>
+   <br />
+   <br />
+
+   <label for = "busstatus">Bus Status  </label>
+   <input id= "busstatus" class="form-control" type="text" value="{{bus.busStatus}}" [(ngModel)]="bus.busStatus" required>
+   <br />
+   <br />
+   <button class="btn btn-primary" type="button" (click)="updateBus()">Update Bus</button>
+ </div> -->
+
+
+
+
+ 

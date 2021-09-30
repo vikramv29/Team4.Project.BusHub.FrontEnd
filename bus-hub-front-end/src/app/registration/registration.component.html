@@ -3,23 +3,26 @@
   </mat-toolbar>
   <mat-card class="my-card">
     <mat-card-content class="my-card">
-        <form class="my-form">
+        <form ngNativeValidate class="my-form" >
            <mat-form-field class="full-width">
                   <mat-label>Full Name</mat-label>
-                  <input  matInput  placeholder="First name"  name="customer.customerName"  required>
+                  <input  matInput  placeholder="First name"  type = "text" name="customer.customerName" [(ngModel)] = "customer.customerName"  required/>
+                  <mat-error>This field is required</mat-error>
                </mat-form-field>
                
                <mat-form-field class="full-width">
                   <mat-label>Email</mat-label>
-                  <input  matInput  placeholder="Email" name="customer.customerEmailId" required>
+                  <input  matInput  placeholder="Email" name="customer.customerEmailId" type = "text" [(ngModel)] = "customer.customerEmailId" required/>
+                  <mat-error>This field is required</mat-error>
                </mat-form-field>
                <mat-form-field class="full-width">
                   <mat-label>Password</mat-label>
-                  <input  matInput  placeholder="Password"  name="customer.customerPassword" type="password"    required>
+                  <input  matInput  placeholder="Password"  name="customer.customerPassword" type="password" [(ngModel)] = "customer.customerPassword"   required/>
+                  <mat-error>This field is required</mat-error>
                </mat-form-field>
         </form>
       </mat-card-content>
      <mat-card-actions>
-        <button mat-raised-button (click)="register()" color="primary">REGISTER</button>
+        <button type = "submit"  mat-raised-button (click)="addCustomer()" color="primary">REGISTER</button>
      </mat-card-actions>
   </mat-card>

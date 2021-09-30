@@ -1,0 +1,26 @@
+
+ <div class="container" *ngIf="viewFlag">
+   <h3 class="nav justify-content-center" *ngIf="!flag">No such Cusotmer Exists In Database.</h3>
+ 
+   <div class="mb-5" *ngIf="flag">
+       <label for="id" class="form-label">Enter Id to Update Customer:</label>
+       <input id = "id" type="number" class="form-control" [(ngModel)]="customerId" required>
+   </div>
+   <button *ngIf="flag" type="button" class="btn btn-primary" style="background:red" (click)="getCustomerById()">Search
+   Customer</button>
+ </div>
+ 
+ <div class="container-fluid" *ngIf="!viewFlag">
+   <label for = "customername">Customer Name   </label>
+   <input id = "customername" class="form-control" type="text" value="{{customer.customerName}}" [(ngModel)]="customer.customerName" required><br><br>
+   <label></label>
+  
+   <label for = "cusotmerEmailId">Customer EmailId  </label>
+   <input id= "cusotmerEmailId" class="form-control" type="text" value="{{customer.cusotmerEmailId}}" [(ngModel)]="customer.cusotmerEmailId" required>
+   <br />
+   <br />
+
+   
+   <button class="btn btn-primary" type="button" (click)="updateCustomer()">Update Bus</button>
+ </div>
+ 

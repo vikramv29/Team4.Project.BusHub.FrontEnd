@@ -1,0 +1,24 @@
+<div class="container" *ngIf="flag">
+    
+  
+    <div class="mb-5" *ngIf="flag">
+        <label for="id" class="form-label">Enter CustomerEmailID :</label>
+        <input id = "id" type="text" class="form-control" [(ngModel)]="customerEmailId" required>
+    </div>
+    <button *ngIf="flag" type="button" class="btn btn-primary" style="background:red" (click)="getCustomerByEmailId()">Search
+    Customer</button>
+ 
+  </div>
+
+  <h3 class="nav justify-content-center" *ngIf="!flag">No such Customer Exists In Database.</h3>
+
+
+<div class="container-fluid" *ngIf="viewflag">
+    <div class="card">
+        <div class="card-body" >
+        <h5 class="card-text">Customer Name: {{customer.customerName | uppercase}}</h5>
+            <p class="card-title">Customer ID: {{customer.customerId}}</p>
+            <p class="card-text">Customer EmailId: {{customer.customerEmailId}}</p><br>
+        </div>
+    </div>
+</div>

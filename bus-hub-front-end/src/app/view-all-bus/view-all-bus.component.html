@@ -1,0 +1,53 @@
+<!--<div class="container-fluid">
+    <h3 *ngIf="flag">Bus Details</h3>
+    <h3 *ngIf="!flag">No Bus To Display As Of Now</h3>
+    <table *ngIf="flag" class="table table-light">
+
+        <thead class="thead-light">
+            <tr>
+                <th>Bus Id</th>
+                <th>Bus Name</th>
+                <th>Bus Source</th>
+                <th>Bus Destination</th>
+                <th>Bus OnBoard Date</th>
+                <th>Bus Arrival Date</th>
+                <th>Bus Type</th>
+                <th>Bus Price</th>
+                <th>Bus Status</th>
+                <th>Bus Rating</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let bus of Bus">
+                <td>{{bus.busId}}</td>
+                <td>{{bus.busName | uppercase}}</td>
+                <td>{{bus.busSource}}</td>
+                <td>{{bus.busDestination}}</td>
+                <td>{{bus.busOnBoardDate}}</td>
+                <td>{{bus.busArrivalDate}}</td>
+                <td>{{bus.busType}}</td>
+                <td>{{bus.busPrice}}</td>
+                <td>{{bus.busStatus}}</td>
+                <td>{{bus.busRating}}</td>
+            </tr>
+        </tbody>
+    </table> -->
+
+
+
+ <div class="container-fluid">
+    <div class="card" *ngFor="let bus of buses">
+        <div class="card-body" >
+        <h5 class="card-text">Bus Name: {{bus.busName | uppercase}}</h5>
+            <p class="card-title">Bus ID: {{bus.busId}}</p>
+            <p class="card-text">Bus Source: {{bus.busSource}}</p>
+            <p class="card-text">Bus Destination: {{bus.busDestination}}</p>
+            <p class="card-text">Bus OnBoard Date: {{bus.busOnBoardDate}}</p>
+            <p class="card-text">Bus Arrival Date: {{bus.busArrivalDate}}</p>
+            <p class="card-text">Bus Type: {{bus.busType}}</p>
+            <p class="card-text">Bus Price: {{bus.busPrice}}</p>
+            <p class="card-text">Bus Status: {{bus.busStatus}}</p>
+            <p class="card-text">Bus Rating: {{bus.busRating}}</p><br>
+        </div>
+    </div>
+</div> 

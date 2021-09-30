@@ -1,0 +1,13 @@
+.spacer {
+    flex: 1 1 auto;
+  }
+.mat-toolbar{
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.mat-sidenav-container{
+    background-color: rgba(255, 255, 255, 0);
+}
+.a-style{
+    text-decoration: none;
+}

@@ -1,0 +1,27 @@
+<mat-toolbar>
+    <span>ADD CUSTOMER</span>
+  </mat-toolbar>
+  <mat-card class="my-card">
+     <mat-card-content>
+        <form class="my-form">
+           <mat-form-field class="full-width">
+              <mat-label>Customer Name</mat-label>
+              <input  matInput  placeholder="Customer Name" name="Customer.customerName" type="text" [(ngModel)] = "customer.customerName" required>
+              <mat-error>This field is required</mat-error>
+           </mat-form-field>
+           <mat-form-field class="full-width">
+              <mat-label>Customer EmailID</mat-label>
+              <input  matInput  placeholder="Email ID" name="Cusotmer.cusotmerEmailId" type="text" [(ngModel)] = "customer.cusotmerEmailId" required>
+              <mat-error>This field is required</mat-error>
+           </mat-form-field>
+           <mat-form-field class="full-width">
+            <mat-label>Customer Password</mat-label>
+            <input  matInput  placeholder="Password" name="Cusotmer.customerPassword" type="password" [(ngModel)] = "customer.customerPassword" required>
+            <mat-error>This field is required</mat-error>
+         </mat-form-field>
+        </form>
+     </mat-card-content>
+     <mat-card-actions>
+        <button mat-raised-button (click)="addCustomer()" color="primary"  type="submit">ADD CUSTOMER</button>
+     </mat-card-actions>
+  </mat-card> 
