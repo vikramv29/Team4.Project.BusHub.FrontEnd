@@ -1,0 +1,751 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>bus-hub-front-end documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css" media="(prefers-color-scheme: dark)">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">bus-hub-front-end documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li
+  >
+  UpdatebusComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/updatebus/updatebus.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-update-bus</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./updatebus.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./updatebus.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#bus" >bus</a>
+                            </li>
+                            <li>
+                                <a href="#busId" >busId</a>
+                            </li>
+                            <li>
+                                <a href="#flag" >flag</a>
+                            </li>
+                            <li>
+                                <a href="#viewFlag" >viewFlag</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#getBusById" >getBusById</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#updateBus" >updateBus</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(service: <a href="../injectables/BusService.html" target="_self">BusService</a>, router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/updatebus/updatebus.component.ts:16</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>service</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/BusService.html" target="_self" >BusService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>router</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getBusById"></a>
+                    <span class="name">
+                        <span ><b>getBusById</b></span>
+                        <a href="#getBusById"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getBusById()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="24"
+                            class="link-to-prism">src/app/updatebus/updatebus.component.ts:24</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="22"
+                            class="link-to-prism">src/app/updatebus/updatebus.component.ts:22</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updateBus"></a>
+                    <span class="name">
+                        <span ><b>updateBus</b></span>
+                        <a href="#updateBus"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>updateBus()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="34"
+                            class="link-to-prism">src/app/updatebus/updatebus.component.ts:34</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="bus"></a>
+                    <span class="name">
+                        <span ><b>bus</b></span>
+                        <a href="#bus"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../classes/Bus.html" target="_self" >Bus</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/updatebus/updatebus.component.ts:14</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="busId"></a>
+                    <span class="name">
+                        <span ><b>busId</b></span>
+                        <a href="#busId"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/updatebus/updatebus.component.ts:13</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="flag"></a>
+                    <span class="name">
+                        <span ><b>flag</b></span>
+                        <a href="#flag"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/updatebus/updatebus.component.ts:15</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="viewFlag"></a>
+                    <span class="name">
+                        <span ><b>viewFlag</b></span>
+                        <a href="#viewFlag"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/updatebus/updatebus.component.ts:16</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import { Router } from &#x27;@angular/router&#x27;;
+import { Bus } from &#x27;../bus&#x27;;
+import { BusService } from &#x27;../bus.service&#x27;;
+
+@Component({
+  selector: &#x27;app-update-bus&#x27;,
+  templateUrl: &#x27;./updatebus.component.html&#x27;,
+  styleUrls: [&#x27;./updatebus.component.css&#x27;]
+})
+export class UpdatebusComponent implements OnInit {
+
+  busId: number;
+  bus: Bus;
+  flag: boolean;
+  viewFlag: boolean;
+  constructor(private service: BusService, private router: Router) {
+    this.bus &#x3D; new Bus();
+    this.flag &#x3D; true;
+    this.viewFlag &#x3D; true;
+  }
+  ngOnInit() {
+  }
+  getBusById() {
+    this.service.getBusBybusId(this.busId).subscribe(res &#x3D;&gt; {
+
+      this.bus &#x3D; res;
+      this.flag &#x3D; false;
+      this.viewFlag &#x3D; false;
+      
+    })
+  }
+
+  updateBus() {
+    this.service.updateBus(this.bus).subscribe(res &#x3D;&gt; {
+      //this.student &#x3D; new Student();
+      this.router.navigate([&quot;employeeLogin/employeedashbord/viewallbuses&quot;])
+    })
+  }
+
+}</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;mat-toolbar&gt;
+   &lt;span&gt;UPDATE BUS&lt;/span&gt;
+ &lt;/mat-toolbar&gt;
+ &lt;mat-card class&#x3D;&quot;my-card&quot;&gt;
+    &lt;mat-card-content&gt;
+       &lt;div *ngIf&#x3D;&quot;flag&quot;&gt;
+      &lt;form class&#x3D;&quot;my-form&quot; &gt;
+         &lt;mat-form-field class&#x3D;&quot;full-width&quot;&gt;
+            &lt;mat-label&gt;Enter bus id&lt;/mat-label&gt;
+            &lt;input  matInput  placeholder&#x3D;&quot;Bus Name&quot; name&#x3D;&quot;Bus.busId&quot; type&#x3D;&quot;number&quot; [(ngModel)] &#x3D; &quot;busId&quot; required&gt;
+            &lt;mat-error&gt;This field is required&lt;/mat-error&gt;
+         &lt;/mat-form-field&gt;
+      &lt;/form&gt;
+   &lt;/div&gt;
+   &lt;div *ngIf&#x3D;&quot;!viewFlag&quot;&gt;
+      &lt;form class&#x3D;&quot;my-form&quot;  &gt;
+         &lt;mat-form-field class&#x3D;&quot;full-width&quot;&gt;
+            &lt;mat-label&gt;Bus Name&lt;/mat-label&gt;
+            &lt;input  matInput  placeholder&#x3D;&quot;Bus Name&quot; name&#x3D;&quot;Bus.busName&quot; type&#x3D;&quot;text&quot; [(ngModel)] &#x3D; &quot;busName&quot; required&gt;
+            &lt;mat-error&gt;This field is required&lt;/mat-error&gt;
+         &lt;/mat-form-field&gt;
+         &lt;mat-form-field class&#x3D;&quot;full-width&quot;&gt;
+            &lt;mat-label&gt;Bus Source&lt;/mat-label&gt;
+            &lt;input  matInput  placeholder&#x3D;&quot;Bus Source&quot; name&#x3D;&quot;Bus.busSource&quot; type&#x3D;&quot;text&quot; [(ngModel)] &#x3D; &quot;busSource&quot; required&gt;
+            &lt;mat-error&gt;This field is required&lt;/mat-error&gt;
+         &lt;/mat-form-field&gt;
+         &lt;mat-form-field class&#x3D;&quot;full-width&quot;&gt;
+          &lt;mat-label&gt;Bus Destination&lt;/mat-label&gt;
+          &lt;input  matInput  placeholder&#x3D;&quot;Bus Destination&quot; name&#x3D;&quot;Bus.busDestination&quot; type&#x3D;&quot;text&quot; [(ngModel)] &#x3D; &quot;busDestination&quot; required&gt;
+          &lt;mat-error&gt;This field is required&lt;/mat-error&gt;
+       &lt;/mat-form-field&gt;
+       &lt;mat-form-field class&#x3D;&quot;full-width&quot;&gt;
+          &lt;mat-label&gt;Bus OnBoard Date&lt;/mat-label&gt;
+          &lt;input  matInput  placeholder&#x3D;&quot;Bus OnBoard Date&quot; name&#x3D;&quot;Bus.busOnBoardDate&quot; type&#x3D;&quot;text&quot; [(ngModel)] &#x3D; &quot;busOnBoardDate&quot; required&gt;
+          &lt;mat-error&gt;This field is required&lt;/mat-error&gt;
+       &lt;/mat-form-field&gt;
+       &lt;mat-form-field class&#x3D;&quot;full-width&quot;&gt;
+          &lt;mat-label&gt;Bus Arrival Date&lt;/mat-label&gt;
+          &lt;input  matInput  placeholder&#x3D;&quot;Bus Arrival Date&quot; name&#x3D;&quot;Bus.busArrivalDate&quot; type&#x3D;&quot;text&quot; [(ngModel)] &#x3D; &quot;busArrivalDate&quot; required&gt; 
+          &lt;mat-error&gt;This field is required&lt;/mat-error&gt;
+       &lt;/mat-form-field&gt;
+       &lt;mat-form-field class&#x3D;&quot;full-width&quot;&gt;
+          &lt;mat-label&gt;Bus Price&lt;/mat-label&gt;
+          &lt;input  matInput  placeholder&#x3D;&quot;Bus Price&quot; name&#x3D;&quot;Bus.busPrice&quot; type&#x3D;&quot;number&quot; [(ngModel)] &#x3D; &quot;busPrice&quot; required&gt;
+          &lt;mat-error&gt;This field is required&lt;/mat-error&gt;
+       &lt;/mat-form-field&gt;
+       &lt;mat-form-field class&#x3D;&quot;full-width&quot;&gt;
+          &lt;mat-label&gt;Bus Type&lt;/mat-label&gt;
+          &lt;input  matInput  placeholder&#x3D;&quot;Bus Type&quot; name&#x3D;&quot;Bus.busType&quot; type&#x3D;&quot;text&quot; [(ngModel)] &#x3D; &quot;busType&quot; required&gt;
+          &lt;mat-error&gt;This field is required&lt;/mat-error&gt;
+       &lt;/mat-form-field&gt;
+       &lt;mat-form-field class&#x3D;&quot;full-width&quot;&gt;
+          &lt;mat-label&gt;Bus Status&lt;/mat-label&gt;
+          &lt;input  matInput  placeholder&#x3D;&quot;Bus Status&quot; name&#x3D;&quot;Bus.busStatus&quot; type&#x3D;&quot;text&quot; [(ngModel)] &#x3D; &quot;busStatus&quot; required&gt;
+          &lt;mat-error&gt;This field is required&lt;/mat-error&gt;
+       &lt;/mat-form-field&gt;
+       &lt;mat-form-field class&#x3D;&quot;full-width&quot;&gt;
+          &lt;mat-label&gt;Bus Rating&lt;/mat-label&gt;
+          &lt;input  matInput  placeholder&#x3D;&quot;Bus Rating&quot; name&#x3D;&quot;Bus.busRating&quot; type&#x3D;&quot;number&quot; [(ngModel)] &#x3D; &quot;busRating&quot; required&gt;
+          &lt;mat-error&gt;This field is required&lt;/mat-error&gt;
+       &lt;/mat-form-field&gt;
+
+      &lt;/form&gt;
+      
+   &lt;/div&gt;
+    &lt;/mat-card-content&gt;
+    &lt;mat-card-actions&gt;
+      &lt;button mat-raised-button (click)&#x3D;&quot;getBusById()&quot; color&#x3D;&quot;primary&quot; type&#x3D;&quot;submit&quot; *ngIf&#x3D;&quot;flag&quot;&gt;Search Bus&lt;/button&gt;
+   &lt;/mat-card-actions&gt;
+   &lt;mat-card-actions&gt;
+      &lt;button mat-raised-button (click)&#x3D;&quot;updateBus()&quot; color&#x3D;&quot;primary&quot; type&#x3D;&quot;submit&quot; *ngIf&#x3D;&quot;!viewFlag&quot;&gt;Update Bus&lt;/button&gt;
+   &lt;/mat-card-actions&gt;
+
+ &lt;/mat-card&gt;
+
+
+
+
+
+
+
+
+
+&lt;!-- &lt;div class&#x3D;&quot;container&quot; *ngIf&#x3D;&quot;viewFlag&quot;&gt;
+   &lt;h3 class&#x3D;&quot;nav justify-content-center&quot; *ngIf&#x3D;&quot;!flag&quot;&gt;No Bus Exists In Database.&lt;/h3&gt;
+ 
+   &lt;div class&#x3D;&quot;mb-5&quot; *ngIf&#x3D;&quot;flag&quot;&gt;
+       &lt;label for&#x3D;&quot;id&quot; class&#x3D;&quot;form-label&quot;&gt;Enter Id to Update Bus:&lt;/label&gt;
+       &lt;input id &#x3D; &quot;id&quot; type&#x3D;&quot;number&quot; class&#x3D;&quot;form-control&quot; [(ngModel)]&#x3D;&quot;busId&quot; required&gt;
+   &lt;/div&gt;
+   &lt;button *ngIf&#x3D;&quot;flag&quot; type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-primary&quot; style&#x3D;&quot;background:red&quot; (click)&#x3D;&quot;getBusById()&quot;&gt;Search
+   Bus&lt;/button&gt;
+
+ &lt;/div&gt;
+
+
+ 
+ &lt;div class&#x3D;&quot;container-fluid&quot; *ngIf&#x3D;&quot;!viewFlag&quot;&gt;
+   &lt;label for &#x3D; &quot;busname&quot;&gt;Bus Name   &lt;/label&gt;
+   &lt;input id &#x3D; &quot;busname&quot; class&#x3D;&quot;form-control&quot; type&#x3D;&quot;text&quot; value&#x3D;&quot;{{bus.busName}}&quot; [(ngModel)]&#x3D;&quot;bus.busName&quot; required&gt;&lt;br&gt;&lt;br&gt;
+   &lt;label&gt;&lt;/label&gt;
+  
+   &lt;label for &#x3D; &quot;busprice&quot;&gt;Bus Price  &lt;/label&gt;
+   &lt;input id&#x3D; &quot;busprice&quot; class&#x3D;&quot;form-control&quot; type&#x3D;&quot;number&quot; value&#x3D;&quot;{{bus.busPrice}}&quot; [(ngModel)]&#x3D;&quot;bus.busPrice&quot; required&gt;
+   &lt;br /&gt;
+   &lt;br /&gt;
+
+   &lt;label for &#x3D; &quot;busrating&quot;&gt;Bus Rating  &lt;/label&gt;
+   &lt;input id&#x3D; &quot;busrating&quot; class&#x3D;&quot;form-control&quot; type&#x3D;&quot;number&quot; value&#x3D;&quot;{{bus.busRating}}&quot; [(ngModel)]&#x3D;&quot;bus.busRating&quot; required&gt;
+   &lt;br /&gt;
+   &lt;br /&gt;
+
+   &lt;label for &#x3D; &quot;busstatus&quot;&gt;Bus Status  &lt;/label&gt;
+   &lt;input id&#x3D; &quot;busstatus&quot; class&#x3D;&quot;form-control&quot; type&#x3D;&quot;text&quot; value&#x3D;&quot;{{bus.busStatus}}&quot; [(ngModel)]&#x3D;&quot;bus.busStatus&quot; required&gt;
+   &lt;br /&gt;
+   &lt;br /&gt;
+   &lt;button class&#x3D;&quot;btn btn-primary&quot; type&#x3D;&quot;button&quot; (click)&#x3D;&quot;updateBus()&quot;&gt;Update Bus&lt;/button&gt;
+ &lt;/div&gt; --&gt;
+ </code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./updatebus.component.css</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">.mat-card{
+    background-color: rgba(255, 255, 255, 0);
+}
+.mat-card-content{
+    color: black;
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><mat-toolbar>   <span>UPDATE BUS</span> </mat-toolbar> <mat-card class="my-card">    <mat-card-content>       <div *ngIf="flag">      <form class="my-form" >         <mat-form-field class="full-width">            <mat-label>Enter bus id</mat-label>            <input  matInput  placeholder="Bus Name" name="Bus.busId" type="number" [(ngModel)] = "busId" required>            <mat-error>This field is required</mat-error>         </mat-form-field>      </form>   </div>   <div *ngIf="!viewFlag">      <form class="my-form"  >         <mat-form-field class="full-width">            <mat-label>Bus Name</mat-label>            <input  matInput  placeholder="Bus Name" name="Bus.busName" type="text" [(ngModel)] = "busName" required>            <mat-error>This field is required</mat-error>         </mat-form-field>         <mat-form-field class="full-width">            <mat-label>Bus Source</mat-label>            <input  matInput  placeholder="Bus Source" name="Bus.busSource" type="text" [(ngModel)] = "busSource" required>            <mat-error>This field is required</mat-error>         </mat-form-field>         <mat-form-field class="full-width">          <mat-label>Bus Destination</mat-label>          <input  matInput  placeholder="Bus Destination" name="Bus.busDestination" type="text" [(ngModel)] = "busDestination" required>          <mat-error>This field is required</mat-error>       </mat-form-field>       <mat-form-field class="full-width">          <mat-label>Bus OnBoard Date</mat-label>          <input  matInput  placeholder="Bus OnBoard Date" name="Bus.busOnBoardDate" type="text" [(ngModel)] = "busOnBoardDate" required>          <mat-error>This field is required</mat-error>       </mat-form-field>       <mat-form-field class="full-width">          <mat-label>Bus Arrival Date</mat-label>          <input  matInput  placeholder="Bus Arrival Date" name="Bus.busArrivalDate" type="text" [(ngModel)] = "busArrivalDate" required>           <mat-error>This field is required</mat-error>       </mat-form-field>       <mat-form-field class="full-width">          <mat-label>Bus Price</mat-label>          <input  matInput  placeholder="Bus Price" name="Bus.busPrice" type="number" [(ngModel)] = "busPrice" required>          <mat-error>This field is required</mat-error>       </mat-form-field>       <mat-form-field class="full-width">          <mat-label>Bus Type</mat-label>          <input  matInput  placeholder="Bus Type" name="Bus.busType" type="text" [(ngModel)] = "busType" required>          <mat-error>This field is required</mat-error>       </mat-form-field>       <mat-form-field class="full-width">          <mat-label>Bus Status</mat-label>          <input  matInput  placeholder="Bus Status" name="Bus.busStatus" type="text" [(ngModel)] = "busStatus" required>          <mat-error>This field is required</mat-error>       </mat-form-field>       <mat-form-field class="full-width">          <mat-label>Bus Rating</mat-label>          <input  matInput  placeholder="Bus Rating" name="Bus.busRating" type="number" [(ngModel)] = "busRating" required>          <mat-error>This field is required</mat-error>       </mat-form-field>      </form>         </div>    </mat-card-content>    <mat-card-actions>      <button mat-raised-button (click)="getBusById()" color="primary" type="submit" *ngIf="flag">Search Bus</button>   </mat-card-actions>   <mat-card-actions>      <button mat-raised-button (click)="updateBus()" color="primary" type="submit" *ngIf="!viewFlag">Update Bus</button>   </mat-card-actions> </mat-card><!-- <div class="container" *ngIf="viewFlag">   <h3 class="nav justify-content-center" *ngIf="!flag">No Bus Exists In Database.</h3>    <div class="mb-5" *ngIf="flag">       <label for="id" class="form-label">Enter Id to Update Bus:</label>       <input id = "id" type="number" class="form-control" [(ngModel)]="busId" required>   </div>   <button *ngIf="flag" type="button" class="btn btn-primary" style="background:red" (click)="getBusById()">Search   Bus</button> </div>  <div class="container-fluid" *ngIf="!viewFlag">   <label for = "busname">Bus Name   </label>   <input id = "busname" class="form-control" type="text" value="{{bus.busName}}" [(ngModel)]="bus.busName" required><br><br>   <label></label>     <label for = "busprice">Bus Price  </label>   <input id= "busprice" class="form-control" type="number" value="{{bus.busPrice}}" [(ngModel)]="bus.busPrice" required>   <br />   <br />   <label for = "busrating">Bus Rating  </label>   <input id= "busrating" class="form-control" type="number" value="{{bus.busRating}}" [(ngModel)]="bus.busRating" required>   <br />   <br />   <label for = "busstatus">Bus Status  </label>   <input id= "busstatus" class="form-control" type="text" value="{{bus.busStatus}}" [(ngModel)]="bus.busStatus" required>   <br />   <br />   <button class="btn btn-primary" type="button" (click)="updateBus()">Update Bus</button> </div> --> </div>'
+    var COMPONENTS = [{'name': 'AddbusComponent', 'selector': 'app-add-bus'},{'name': 'AddCustomerComponent', 'selector': 'app-add-customer'},{'name': 'AddTicketComponent', 'selector': 'app-add-ticket'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'CustomerDashbordComponent', 'selector': 'app-customer-dashbord'},{'name': 'DeleteBusComponent', 'selector': 'app-delete-bus'},{'name': 'DeleteCustomerComponent', 'selector': 'app-delete-customer'},{'name': 'EmployeeDashbordComponent', 'selector': 'app-employee-dashbord'},{'name': 'EmployeeloginComponent', 'selector': 'app-add-customer'},{'name': 'GetBusByIdComponent', 'selector': 'app-get-bus-by-id'},{'name': 'GetBusByNameComponent', 'selector': 'app-get-bus-by-name'},{'name': 'GetBusBySourceComponent', 'selector': 'app-get-bus-by-source'},{'name': 'GetBusBytypeComponent', 'selector': 'app-get-bus-bytype'},{'name': 'GetCustomerBycustomerIdComponent', 'selector': 'app-get-customer-bycustomer-id'},{'name': 'GetCustomersBycustomerEmailIdComponent', 'selector': 'app-get-customers-bycustomer-email-id'},{'name': 'GetCustomersBycustomerNameComponent', 'selector': 'app-get-customers-bycustomer-name'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'RegistrationComponent', 'selector': 'app-add-customer'},{'name': 'SearchByBusTypeComponent', 'selector': 'app-search-by-bus-type'},{'name': 'SearchByIdComponent', 'selector': 'app-search-by-id'},{'name': 'SearchByNameComponent', 'selector': 'app-search-by-name'},{'name': 'SearchBySourceComponent', 'selector': 'app-search-by-source'},{'name': 'UpdatebusComponent', 'selector': 'app-update-bus'},{'name': 'UpdateCustomerComponent', 'selector': 'app-update-customer'},{'name': 'ViewAllBusComponent', 'selector': 'app-view-buses'},{'name': 'ViewAllCustomersComponent', 'selector': 'app-view-customers'},{'name': 'ViewAllticketsComponent', 'selector': 'app-view-customers'},{'name': 'ViewticketByIdComponent', 'selector': 'app-viewticket-by-id'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'UpdatebusComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'UpdatebusComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
