@@ -12,6 +12,9 @@ export class BusService {
   constructor(private http: HttpClient) {
     this.url= "http://localhost:9090/bus" ;
    }
+   public checkBus(bus:Bus) :Observable <Bus> {
+    return this.http.get<Bus>(this.url+"/buscheck/" +bus);
+   }
    public addBus(bus: Bus): Observable<Bus>{
      return this.http.post<Bus>(this.url, bus) ;
    }
