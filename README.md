@@ -5,6 +5,16 @@ It is an online commerical bus booking platform where a customer can enter his s
 This application has not only been deployed for the customer side but also for the employee of BusHub where he can see the customers logged into the application, search the customers by various filters like name, id, etc, add as many buses as he may be directed by the company, update the rating and price of the buses based on their performance on specific days, and mark the status of on boarding journey as reached, en route, cancelled,etc.
 
 
+# Technologies Used
+
+1. HTML 
+2. CSS 
+3. Angular 10 
+4. Angular Material 
+5. Jasmine 
+6. Karma
+
+
 # Contributers
 
 1. Vikram Verma
